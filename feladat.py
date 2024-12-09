@@ -13,6 +13,7 @@ while ujra > 0:
     ujra -= 1
     jatekos_szamok.append(megadott_szamok)
 
+
 print(jatekos_szamok)
 
 import random
@@ -26,23 +27,25 @@ jatekos_szamok_set= set(jatekos_szamok)
 def eltalalt_szamok(jatekos_szamok_set, random_szamok):
     return len(jatekos_szamok_set.intersection(random_szamok))
 
+
 eltalalt = eltalalt_szamok(jatekos_szamok_set, random_szamok)
 print (f"sikeres találatok: {eltalalt}")
- if eltalalt == 0:
-    print("skill issue")
+
+
+if eltalalt == 0:
+   print("greater skill issue")
 
 elif eltalalt == 1:
-    print("still a skill issue")
+    print("skill issue")
 
 elif eltalalt == 2:
-    print("STILL a skill issue")
-
-elif eltalalt == 3:
     print("lesser skill issue")
 
+elif eltalalt == 3:
+    print("GAMBLING YEAAAAAAHHHHHHHHHHH!!!!!!!!!!!!!")
+
 elif eltalalt == 4:
-    print("I LOVE GAMBLING!!!!!!!!!!!!!")
+    print("menjé lettózni")
 
 elif eltalalt == 5:
-    from IPython.display import Image, display
-    display(Image(filename = ))
+    print("touch grass")
