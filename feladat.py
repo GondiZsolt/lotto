@@ -21,7 +21,28 @@ random_szamok = [random.randint(0,90) for _ in range(5)]
 
 print (random_szamok)
 
-def eltalalt_szamok(jatekos_szamok, random_szamok):
-    return len(jatekos_szamok.intersection(random_szamok))
+jatekos_szamok_set= set(jatekos_szamok)
 
-eltalalt
+def eltalalt_szamok(jatekos_szamok_set, random_szamok):
+    return len(jatekos_szamok_set.intersection(random_szamok))
+
+eltalalt = eltalalt_szamok(jatekos_szamok_set, random_szamok)
+print (f"sikeres találatok: {eltalalt}")
+ if eltalalt == 0:
+    print("skill issue")
+
+elif eltalalt == 1:
+    print("still a skill issue")
+
+elif eltalalt == 2:
+    print("STILL a skill issue")
+
+elif eltalalt == 3:
+    print("lesser skill issue")
+
+elif eltalalt == 4:
+    print("I LOVE GAMBLING!!!!!!!!!!!!!")
+
+elif eltalalt == 5:
+    from IPython.display import Image, display
+    display(Image(filename = ))
