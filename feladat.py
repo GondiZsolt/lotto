@@ -7,6 +7,8 @@ Ha tudjátok, többféle lottó játékkal is lehessen játszani!
 """
 jatekos_szamok = []
 
+jatekos_szamok.sort()
+
 ujra = 5
 while ujra > 0:
     megadott_szamok = int(input("Adj meg egy számot:"))
@@ -19,6 +21,8 @@ print(jatekos_szamok)
 import random
 
 random_szamok = [random.randint(0,90) for _ in range(5)]
+
+random_szamok.sort()
 
 print (random_szamok)
 
@@ -45,7 +49,7 @@ elif eltalalt == 3:
     print("GAMBLING YEAAAAAAHHHHHHHHHHH!!!!!!!!!!!!!")
 
 elif eltalalt == 4:
-    print("menjé lettózni")
+    print("menjé lottózni")
 
 elif eltalalt == 5:
     print("touch grass")
